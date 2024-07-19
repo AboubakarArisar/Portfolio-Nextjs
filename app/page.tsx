@@ -22,7 +22,7 @@ export default function Home() {
               MERN Stack Developer
             </h2>
             <p className='text-center w-full'>
-              Hi, I'm Aboubakar, a passionate MERN stack developer with
+              Hi, I am Aboubakar, a passionate MERN stack developer with
               expertise in building scalable and responsive web applications. I
               specialize in MERN and Nextjs.
             </p>
