@@ -2,16 +2,24 @@
 import Navbar from "./Navbar";
 import Skills from "./Skills";
 import Reachout from "./Reachout";
-import { useScroll, motion } from "framer-motion";
+import { useFollowPointer } from "./use-follow-pointer";
+
 import "./globals.css";
 import Footer from "./Footer";
-
+import { useRef } from "react";
+import { motion } from "framer-motion";
 export default function Home() {
-  const { scrollYProgress } = useScroll();
+  const ref = useRef(null);
+  const { x, y } = useFollowPointer(ref);
+
   return (
     <>
-      <motion.div style={{ scaleX: scrollYProgress }} />
-      <div className='min-h-screen w-full bg-white flex flex-col gap-6'>
+      <motion.div
+        ref={ref}
+        style={{ x, y }}
+        className='box fixed z-20 opacity-80'
+      ></motion.div>
+      <motion.div className='min-h-screen w-full bg-white flex flex-col gap-6 main z-10'>
         <Navbar />
         <div className='relative w-full h-[80vh] bg-gradient-to-br from-[#1e293b] to-[#3b82f6]'>
           <div className='flex flex-col  px-5 justify-center items-center h-full md:w-1/2'>
@@ -41,7 +49,7 @@ export default function Home() {
         <Skills />
         <Reachout />
         <Footer />
-      </div>
+      </motion.div>
     </>
   );
 }
