@@ -14,7 +14,12 @@ export default function Home() {
       <div className='min-h-screen w-full bg-white flex flex-col gap-6'>
         <Navbar />
         <div className='relative w-full h-[80vh] bg-gradient-to-br from-[#1e293b] to-[#3b82f6]'>
-          <div className='flex flex-col  px-5 justify-center items-center h-full w-1/2'>
+          <div className='flex flex-col  px-5 justify-center items-center h-full md:w-1/2'>
+            <img
+              src='/pic.jpg'
+              alt=''
+              className='w-24 h-24 rounded-full md:hidden '
+            />
             <h1 className='w-full text-center font-bold text-3xl '>
               Abou<span className='text-green-300'> Bakar</span>
             </h1>
@@ -31,7 +36,7 @@ export default function Home() {
               Node.js
             </p>
           </div>
-          <div className='absolute -top-8 rounded right-8 h-[90vh] w-[30%] bg-[url(/ab.jpg)] bg-cover'></div>
+          <div className='absolute md:-top-8 rounded md:right-8 md:h-[90vh] md:w-[30%] bg-[url(/ab.jpg)] bg-cover'></div>
         </div>
         <Skills />
         <Reachout />

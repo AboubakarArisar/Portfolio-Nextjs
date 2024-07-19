@@ -9,7 +9,7 @@ const Skills: React.FC = () => {
       <h5 className='text-center text-base opacity-70 w-full py-4'>
         Showcasing expertise in various programming languages and frameworks.
       </h5>
-      <div className='grid grid-cols-3 p-4 w-full'>
+      <div className='grid grid-cols-1 gap-4 place-items-center md:grid-cols-3  md:p-4 w-full'>
         <div className='flex flex-col gap-4 justify-center items-center w-[80%]'>
           <h1 className='font-bold text-xl'>
             <svg

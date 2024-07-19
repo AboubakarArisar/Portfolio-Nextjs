@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
     <header className='h-[20vh] p-6 '>
       <nav className='text-black flex justify-between items-center'>
         <div>
-          <ul className='flex gap-6 text-lg'>
+          <ul className='flex gap-2 md:gap-6 md:text-lg'>
             <li>
               <Link href='/'>
                 <h1 className='border-2 px-4 py-2 rounded-full'>Home</h1>
@@ -13,20 +13,18 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link href='/about'>
-                <div className='relative'>
-                  <h1 className='border-2 px-4 py-2 rounded-full relative overflow-hidden'>
-                    Projects
-                  </h1>
-                </div>
+                <h1 className='border-2 px-4 py-2 rounded-full relative overflow-hidden'>
+                  Projects
+                </h1>
               </Link>
             </li>
           </ul>
         </div>
-        <div>
+        <div className='hidden md:block'>
           <img src='/logo.png' alt='logo' className='w-8 h-8' />
         </div>
         <div>
-          <button className='bg-blue-400 flex duration-300 px-4 py-2 rounded-full text-white font-semibold relative overflow-hidden'>
+          <button className='bg-blue-400 flex duration-300 py-2 md:px-4 md:py-2 rounded-full text-white font-semibold relative overflow-hidden'>
             Contact us
             <span className='text-base font-bold absolute inset-0 flex items-center justify-center transition-transform transform translate-x-0 bg-blue-500 hover:translate-x-full duration-300'>
               <svg
