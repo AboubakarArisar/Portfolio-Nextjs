@@ -1,0 +1,54 @@
+import Link from "next/link";
+
+const Navbar: React.FC = () => {
+  return (
+    <header className='h-[20vh] p-6 '>
+      <nav className='text-black flex justify-between items-center'>
+        <div>
+          <ul className='flex gap-6 text-lg'>
+            <li>
+              <Link href='/'>
+                <h1 className='border-2 px-4 py-2 rounded-full'>Home</h1>
+              </Link>
+            </li>
+            <li>
+              <Link href='/about'>
+                <div className='relative'>
+                  <h1 className='border-2 px-4 py-2 rounded-full relative overflow-hidden'>
+                    Projects
+                  </h1>
+                </div>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src='/logo.png' alt='logo' className='w-8 h-8' />
+        </div>
+        <div>
+          <button className='bg-blue-400 flex duration-300 px-4 py-2 rounded-full text-white font-semibold relative overflow-hidden'>
+            Contact us
+            <span className='text-base font-bold absolute inset-0 flex items-center justify-center transition-transform transform translate-x-0 bg-blue-500 hover:translate-x-full duration-300'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='w-6 h-6'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3'
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Navbar;
