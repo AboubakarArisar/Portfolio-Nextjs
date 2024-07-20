@@ -41,7 +41,8 @@ body {
 
 .element:hover .overlay {
   top: 0;
-  transition: infinite 0.3s;
+  cursor: pointer;
+  transition: infinite 0.8s;
 }
 
 .element .heading {

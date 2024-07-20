@@ -6,8 +6,8 @@ const Way: React.FC = () => {
         <h1 className='w-full text-center text-3xl font-semibold text-black'>
           My Development Process
         </h1>
-        <div className='flex flex-col p-4  text-blue-900'>
-          <div className='relative overflow-hidden element w-full border-b-2 p-4'>
+        <div className='flex flex-col  p-4  text-blue-900'>
+          <div className='relative overflow-hidden element w-full border-b-2 p-8'>
             <div className='absolute  overlay left-0 -top-full w-full h-full bg-orange-400'></div>
             <h1 className='text-3xl md:text-5xl font-bold heading cursor-pointer flex items-center justify-between'>
               Idea & Planning
@@ -29,7 +29,7 @@ const Way: React.FC = () => {
               </span>
             </h1>
           </div>
-          <div className='relative overflow-hidden element w-full border-b-2 p-4'>
+          <div className='relative overflow-hidden element w-full border-b-2 p-8 '>
             <div className='absolute  overlay left-0 -top-full w-full h-full bg-orange-400'></div>
             <h1 className='text-3xl md:text-5xl font-bold heading cursor-pointer flex items-center justify-between'>
               Design & Prototyping
@@ -51,7 +51,7 @@ const Way: React.FC = () => {
               </span>
             </h1>
           </div>
-          <div className='relative overflow-hidden element w-full border-b-2 p-4'>
+          <div className='relative overflow-hidden element w-full border-b-2 p-8'>
             <div className='absolute  overlay left-0 -top-full w-full h-full bg-orange-400'></div>
             <h1 className='text-3xl md:text-5xl font-bold heading cursor-pointer flex items-center justify-between'>
               Development
@@ -73,7 +73,7 @@ const Way: React.FC = () => {
               </span>
             </h1>
           </div>
-          <div className='relative overflow-hidden element w-full border-b-2 p-4'>
+          <div className='relative overflow-hidden element w-full border-b-2 p-8'>
             <div className='absolute  overlay left-0 -top-full w-full h-full bg-orange-400'></div>
             <h1 className='text-3xl md:text-5xl font-bold heading cursor-pointer flex items-center justify-between'>
               Testing & Deployment

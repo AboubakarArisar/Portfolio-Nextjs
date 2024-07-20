@@ -17,7 +17,7 @@ export default function Home() {
       <motion.div
         ref={ref}
         style={{ x, y }}
-        className='box fixed z-20 opacity-0 sm:pacity-80'
+        className='box fixed z-2 opacity-0 sm:opacity-80'
       ></motion.div>
       <motion.div className='min-h-screen w-full bg-white flex flex-col gap-6 main z-10'>
         <Navbar />
