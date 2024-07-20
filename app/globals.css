@@ -49,3 +49,19 @@ body {
   position: relative;
   z-index: 9;
 }
+
+@keyframes moveSkew {
+  0% {
+    transform: skewX(16deg) translateX(20%) translateY(10%);
+  }
+  50% {
+    transform: skewX(26deg) translateX(-20%) translateY(55%);
+  }
+  100% {
+    transform: skewX(90deg) translateX(30) translateY(40%);
+  }
+}
+
+.animate-skew-infinite {
+  animation: moveSkew 7s ease-in-out infinite alternate;
+}
