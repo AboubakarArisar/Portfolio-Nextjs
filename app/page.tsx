@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Skills from "./Skills";
 import Reachout from "./Reachout";
 import { useFollowPointer } from "./use-follow-pointer";
-
+import Way from "./Way";
 import "./globals.css";
 import Footer from "./Footer";
 import { useRef } from "react";
@@ -17,7 +17,7 @@ export default function Home() {
       <motion.div
         ref={ref}
         style={{ x, y }}
-        className='box fixed z-20 opacity-80'
+        className='box fixed z-20 opacity-0 sm:pacity-80'
       ></motion.div>
       <motion.div className='min-h-screen w-full bg-white flex flex-col gap-6 main z-10'>
         <Navbar />
@@ -47,6 +47,7 @@ export default function Home() {
           <div className='absolute md:-top-8 rounded md:right-8 md:h-[90vh] md:w-[30%] bg-[url(/ab.jpg)] bg-cover'></div>
         </div>
         <Skills />
+        <Way />
         <Reachout />
         <Footer />
       </motion.div>

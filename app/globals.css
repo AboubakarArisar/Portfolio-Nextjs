@@ -38,3 +38,13 @@ body {
   border-radius: 50%;
   background: #c49a27;
 }
+
+.element:hover .overlay {
+  top: 0;
+  transition: linear 0.3s;
+}
+
+.element .heading {
+  position: relative;
+  z-index: 9;
+}
