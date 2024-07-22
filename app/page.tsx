@@ -7,6 +7,7 @@ import Way from "./Way";
 import "./globals.css";
 import Footer from "./Footer";
 import { useRef } from "react";
+import Contact from "./Contact";
 import { motion } from "framer-motion";
 export default function Home() {
   const ref = useRef(null);
@@ -52,6 +53,7 @@ export default function Home() {
         </div>
         <Skills />
         <Way />
+        <Contact />
         <Reachout />
         <Footer />
       </motion.div>
