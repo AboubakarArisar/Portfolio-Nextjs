@@ -44,7 +44,7 @@ export default function Home() {
               Node.js
             </p>
           </div>
-          <div className='w-[40%] h-[90vh] absolute top-[10%] right-[10%] overflow-hidden'>
+          <div className='xsm:hidden sm:block w-[40%] h-[90vh] absolute top-[10%] right-[10%] overflow-hidden'>
             <div className='rounded-full bg-green-400 w-[80%] h-[40vh] absolute top-[10%] left-[20%]  blur-xl animate-skew-infinite'></div>
           </div>
 
